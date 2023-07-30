@@ -1,0 +1,88 @@
+.nav__container {
+    background: #0A0A0A;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.branding__module {
+    position: relative;
+}
+
+.brand {
+    font-size: 40px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+    /* background: linear-gradient(90deg, rgba(0, 255, 158, 1) 0%, rgba(196, 0, 255, 1) 100%); */
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+
+}
+
+.underline {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+    opacity: 0;
+}
+
+.branding__module:hover .underline {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    /* background-image: linear-gradient(to right, #00e5ff, #00ceff, #00afff, #7380ff, #d812eb); */
+    /* background-image: linear-gradient(to right, #00ffc0, #00e6fd, #00c2ff, #008dff, #b912eb); */
+
+}
+
+.nav__menus__module ul {
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav__menus__module ul>li:hover {
+    background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+    /* background: linear-gradient(90deg, rgba(0, 255, 158, 1) 0%, rgba(196, 0, 255, 1) 100%); */
+    background-clip: text;
+    /* color: #cd46ff; */
+    color: transparent;
+    transition: all .2s ease-in-out;
+}
+
+.user__module {
+    display: flex;
+    column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__module span {
+    cursor: pointer;
+}
+
+.user__module button {
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(to right top, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    box-shadow: 2px 1000px 1px #0A0A0A inset;
+}
+
+.user__module button:active {
+    box-shadow: none;
+}
+
+.user__module button:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        linear-gradient(to left bottom, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+}
