@@ -1,0 +1,124 @@
+.hero__container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text__wrapper {
+    width: 40%;
+    font-size: 75px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.cool__text {
+    font-weight: 600;
+    background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+    /* background: linear-gradient(90deg, rgba(0, 255, 158, 1) 0%, rgba(196, 0, 255, 1) 100%); */
+    background-clip: text;
+    color: transparent;
+}
+
+.slide__wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.pentagon {
+    height: 700px;
+    width: 700px;
+    background: url('../../public/assets/pantagon.png');
+    background-size: cover;
+    opacity: .5;
+    background-repeat: no-repeat;
+    right: -100px;
+    position: absolute;
+    z-index: -1;
+    animation: myAnim 25s linear 0s infinite normal none;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero__container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text__wrapper {
+        width: 100%;
+        font-size: 45px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .slide__wrapper {
+        width: 60%;
+    }
+
+    .pentagon {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    .hero__container {
+        width: 100%;
+    }
+
+    .text__wrapper {
+        width: 50%;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .slide__wrapper {
+        width: 40%;
+    }
+
+    .pentagon {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .text__wrapper {
+        width: 40%;
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .slide__wrapper {
+        width: 40%;
+    }
+
+    .pentagon {
+        height: 320px;
+        width: 320px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 993px) {}

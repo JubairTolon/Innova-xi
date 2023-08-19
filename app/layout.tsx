@@ -3,6 +3,8 @@ import '../styles/global/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import SearchSection from '@/components/SearchSection'
+import Categories from '@/components/Categories'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body>
-        <Navbar />{children}<Footer />
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   )
