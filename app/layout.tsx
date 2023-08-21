@@ -1,10 +1,8 @@
-import Footer from '@/components/Footer'
-import '../styles/global/globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Footer from '@/components/Footer'//learn@
+import '../styles/global/globals.css'//learn why without var
+import type { Metadata } from 'next'//why type
+import { Inter } from 'next/font/google'//
 import Navbar from '@/components/Navbar'
-import SearchSection from '@/components/SearchSection'
-import Categories from '@/components/Categories'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode //
 }) {
   return (
     <html suppressHydrationWarning lang="en">

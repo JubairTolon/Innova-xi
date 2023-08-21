@@ -1,7 +1,7 @@
+'use client'
 import Categories from "@/components/Categories";
 import Hero from "@/components/Hero";
 import SearchSection from "@/components/SearchSection";
-import Link from "next/link";
 
 
 export default function Home() {

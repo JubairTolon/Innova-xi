@@ -4,6 +4,7 @@
     padding: 0 20px;
     align-items: center;
     justify-content: space-between;
+    margin: 40px 0;
 }
 
 .text__wrapper {
@@ -23,25 +24,43 @@
 
 .slide__wrapper {
     width: 60%;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    position: relative;
     z-index: 0;
+    /* background-image: url('../../public/assets/1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; */
+}
+
+.image__container {
+    width: 60%;
+    height: 100%;
+    position: relative;
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .pentagon {
-    height: 700px;
-    width: 700px;
-    background: url('../../public/assets/pantagon.png');
-    background-size: cover;
-    opacity: .5;
+    height: 450px;
+    width: 450px;
+    background-image: url('../../public/assets/pantagon.png');
+    background-size: contain;
+    opacity: .4;
+    background-position: center center;
     background-repeat: no-repeat;
     right: -100px;
     position: absolute;
     z-index: -1;
     animation: myAnim 25s linear 0s infinite normal none;
+    transform-origin: center;
 }
 
 @keyframes myAnim {
@@ -70,12 +89,14 @@
     }
 
     .slide__wrapper {
-        width: 60%;
+        width: 100%;
+        height: 300px;
     }
 
     .pentagon {
         height: 280px;
         width: 280px;
+        right: -100px;
     }
 }
 
@@ -83,6 +104,7 @@
 @media only screen and (min-width:601px) and (max-width: 768px) {
     .hero__container {
         width: 100%;
+        margin-top: 20px 0;
     }
 
     .text__wrapper {
@@ -92,12 +114,18 @@
     }
 
     .slide__wrapper {
-        width: 40%;
+        width: 50%;
+        height: 300px;
+    }
+
+    .image__container {
+        width: 70%;
     }
 
     .pentagon {
-        height: 280px;
-        width: 280px;
+        height: 200px;
+        width: 200px;
+        right: -100px;
     }
 }
 
@@ -111,12 +139,14 @@
     }
 
     .slide__wrapper {
-        width: 40%;
+        width: 60%;
+        height: 400px;
     }
 
     .pentagon {
         height: 320px;
         width: 320px;
+        left: -80px;
     }
 }
 
