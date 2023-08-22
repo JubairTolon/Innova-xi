@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'//learn@
-import '../styles/global/globals.css'//learn why without var
+import './globals.css'//learn why without var
 import type { Metadata } from 'next'//why type
 import { Inter } from 'next/font/google'//
 import Navbar from '@/components/Navbar'

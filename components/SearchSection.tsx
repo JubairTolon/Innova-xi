@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/modules/search.module.css'
+import styles from '@/styles/search.module.css'
 import { IoLocationOutline } from 'react-icons/io5';
 import { BsSearch } from 'react-icons/bs';
 

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import styles from '../styles/modules/nav.module.css'
+import styles from '@/styles/nav.module.css'
 import { HiMenu } from 'react-icons/hi';
 import { RxCross2 } from 'react-icons/rx';
 import { BsCartCheck } from 'react-icons/bs';

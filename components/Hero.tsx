@@ -1,12 +1,12 @@
 'use client'
-import React, { useState, useEffect, useMemo } from 'react'
-import styles from '../styles/modules/hero.module.css'
+import React, { useState } from 'react'
+import styles from '@/styles/hero.module.css'
 import Image from 'next/image'
-import image1 from '../public/assets/1.png'
-import image2 from '../public/assets/2.png'
-import image3 from '../public/assets/3.png'
-import image4 from '../public/assets/4.png'
-import image5 from '../public/assets/5.png'
+import image1 from '@/public/assets/1.png'
+import image2 from '@/public/assets/2.png'
+import image3 from '@/public/assets/3.png'
+import image4 from '@/public/assets/4.png'
+import image5 from '@/public/assets/5.png'
 
 const Hero = () => {
     const [counter, setCounter] = useState<number>(0);
