@@ -3,6 +3,7 @@ import styles from '@/styles/footer.module.css'
 import Link from 'next/link'
 
 export default function Footer() {
+
     return (
         <footer className={styles.footer__container}>
             <div className={styles.buy__today__container}></div>

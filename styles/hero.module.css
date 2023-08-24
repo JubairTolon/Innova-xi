@@ -57,6 +57,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     right: -100px;
+    top: 0;
     position: absolute;
     z-index: -1;
     animation: myAnim 25s linear 0s infinite normal none;

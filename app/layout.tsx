@@ -1,10 +1,7 @@
 import Footer from '@/components/Footer'//learn@
 import './globals.css'//learn why without var
 import type { Metadata } from 'next'//why type
-import { Inter } from 'next/font/google'//
 import Navbar from '@/components/Navbar'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Innova XI',

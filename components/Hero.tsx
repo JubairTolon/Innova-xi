@@ -27,11 +27,13 @@ const Hero = () => {
                     <Image
                         className={styles.image}
                         src={temp[counter]}
-                        layout='fill'
-                        sizes='100vw'
+                        // layout='fill'
+                        // sizes='100vw'
                         alt='headphone'
+                        priority
                         quality={100}
-                        blurDataURL="blur" />
+                    // blurDataURL="blur"
+                    />
                     <div className={styles.pentagon}></div>
                 </div>}
             </div>
