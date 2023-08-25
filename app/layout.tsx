@@ -1,7 +1,8 @@
-import Footer from '@/components/Footer'//learn@
-import './globals.css'//learn why without var
-import type { Metadata } from 'next'//why type
+import Footer from '@/components/Footer'
+import './globals.css'
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
+import { GlobalContextProvider } from '@/context/useContext'
 
 export const metadata: Metadata = {
   title: 'Innova XI',
@@ -11,14 +12,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode //
+  children: React.ReactNode
 }) {
   return (
     <html suppressHydrationWarning lang="en">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <GlobalContextProvider>
+          <Navbar />{children}<Footer />
+        </GlobalContextProvider>
       </body>
     </html>
   )

@@ -1,12 +1,33 @@
 import React from 'react'
 import styles from '@/styles/footer.module.css'
 import Link from 'next/link'
+import { BsArrowRight } from 'react-icons/bs'
+import { MdSwipeRight } from 'react-icons/md'
 
 export default function Footer() {
 
     return (
         <footer className={styles.footer__container}>
-            <div className={styles.buy__today__container}></div>
+            <div className={styles.buy__today__container}>
+                <div className={styles.buy__container__left__contents}>
+                    <div>
+                        <span>Hello</span>
+                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                    </div>
+                    <div>
+                        <span>Hello</span>
+                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                    </div>
+                    <div>
+                        <span>Hello</span>
+                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                    </div>
+                </div>
+                <div className={styles.buy__container__right__contents}>
+                    <button>Subscrive <span><BsArrowRight /></span></button>
+                    <button>More <span><BsArrowRight /></span></button>
+                </div>
+            </div>
             <div className={styles.logo__content__container}>
                 <div className={`${styles.single__footer__item} ${styles.branding__module}`}>
                     <Link href='/' className={styles.brand}>Innova XI</Link>
@@ -81,6 +102,6 @@ export default function Footer() {
                 </div>
                 <button className={styles.location__btn}>Explore All Items</button>
             </div>
-        </footer>
+        </footer >
     )
 }

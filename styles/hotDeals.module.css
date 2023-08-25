@@ -1,0 +1,41 @@
+.hotDeal__contianer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.product__container {
+    width: 50%;
+}
+
+.hotDeal__heading {}
+
+.dashed__underline {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff) border-box;
+    border-radius: 50em;
+    border-bottom: 2px solid transparent;
+}
+
+.hotDeal__heading h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.single__product__container {}
+
+.text__container {
+    font-size: 60px;
+    width: 40%;
+    padding: 0 30px;
+    font-weight: 300;
+}
+
+.text__container span {
+    font-weight: 500;
+    background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+    background-clip: text;
+    color: transparent;
+}

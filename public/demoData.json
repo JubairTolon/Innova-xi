@@ -1,0 +1,186 @@
+[
+    {
+        "_id": "1",
+        "product_name": "ZEBRONICS Zeb-Reaper 2.4GHz Wireless Gaming Mouse",
+        "product_price": "1,599.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/fx0mrwn/pngegg-13.png"
+    },
+    {
+        "_id": "2",
+        "product_name": "Gaming Desktop IBM PC Intel Core i7",
+        "product_price": "85,000.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/cTj6s8W/pngegg-10.png"
+    },
+    {
+        "_id": "3",
+        "product_name": "Rezor Mouse Pad",
+        "product_price": "300.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/K5gN9Sx/pngegg-11.png"
+    },
+    {
+        "_id": "4",
+        "product_name": "Gaming Graphics Card",
+        "product_price": "2,5000.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/WgBNVpF/pngegg-8.png"
+    },
+    {
+        "_id": "5",
+        "product_name": "Gaming Desktop IBM PC Intel Core i7",
+        "product_price": "45099.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/7S5PJm8/pngegg-9.png"
+    },
+    {
+        "_id": "6",
+        "product_name": "Gaming Mechanical Keyboard",
+        "product_price": "4500.00",
+        "product_type": "hotdeals",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/kHsdm6Q/pngegg.png"
+    },
+    {
+        "_id": "7",
+        "product_name": "IDEUS Yellow Wireed",
+        "product_price": "1500.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/4g0WqrQ/pngegg-17.png"
+    },
+    {
+        "_id": "8",
+        "product_name": "JBL Flip 7 Black",
+        "product_price": "17099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/gjfRnPN/pngegg-15.png"
+    },
+    {
+        "_id": "9",
+        "product_name": "Beats Red Wirelessh",
+        "product_price": "17099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/PhG7QdZ/pngegg-16.png"
+    },
+    {
+        "_id": "10",
+        "product_name": "ECHA Alo-3 White",
+        "product_price": "17099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/qM7sqJf/pngegg-14.png"
+    },
+    {
+        "_id": "11",
+        "product_name": "MSI Red Gameing",
+        "product_price": "15099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/wKBzmZg/pngegg-7.png"
+    },
+    {
+        "_id": "12",
+        "product_name": "MSI Blue PC Gameing",
+        "product_price": "55099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/Ms2q5zq/pngegg-6.png"
+    },
+    {
+        "_id": "13",
+        "product_name": "Tt Backlight Wired",
+        "product_price": "999.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/89qshdv/pngegg-5.png"
+    },
+    {
+        "_id": "14",
+        "product_name": "RGB Redion Mouse Gameing",
+        "product_price": "5099.00",
+        "product_type": "master",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/YZKh1Qq/pngegg-3.png"
+    },
+    {
+        "_id": "15",
+        "product_name": "Combo Mouse Keyboard Headphone Gameing",
+        "product_price": "2499.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/D8xXpYs/pngegg-4.png"
+    },
+    {
+        "_id": "16",
+        "product_name": "Asus ROG Gameing",
+        "product_price": "71099.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/Pz1f1sS/pngegg-1.png"
+    },
+    {
+        "_id": "17",
+        "product_name": "Controller Black Gameing",
+        "product_price": "7099.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/HVG418r/pngegg-2.png"
+    },
+    {
+        "_id": "18",
+        "product_name": "Ps5 Black",
+        "product_price": "150099.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/cgVvYsk/Pngtree-black-edition-with-controller-joystick-5415635.png"
+    },
+    {
+        "_id": "19",
+        "product_name": "Controller White Gameing",
+        "product_price": "10099.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/FbyCTRr/playstation-4-playstation-2-xbox-360-playstation-3-sony-playstation-png-512a93d8de7d258a8b2a5137dc9f.png"
+    },
+    {
+        "_id": "20",
+        "product_name": "Sony Blue Wireless Classic",
+        "product_price": "12000.00",
+        "product_type": "classic",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/1qYDDSj/noise-cancelling-headphones-bluetooth-headset-wireless-sony-bluetooth-headset-bass-623c38870e1f7b598.png"
+    },
+    {
+        "_id": "21",
+        "product_name": "Beats Black Classic",
+        "product_price": "6099.00",
+        "product_type": "classic",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/zFCfYQC/headphones-jbl-audio-sound-wireless-earphones-686d27c2f4866fd507719ada5a738ff7.png"
+    },
+    {
+        "_id": "22",
+        "product_name": "Gameing Headphone Black 3.0 USB",
+        "product_price": "6099.00",
+        "product_type": "gameing",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/fQvyVdP/5bc2e12a0d609-82810f2dd3ee30979ea0ceb879f5db1f.png"
+    },
+    {
+        "_id": "23",
+        "product_name": "Green Classic Wired Headphone 3.5",
+        "product_price": "699.00",
+        "product_type": "classic",
+        "product_discount": 10,
+        "product_img": "https://i.ibb.co/T1pBPnv/headphones-bluetooth-headset-microphone-pairing-bluetooth-earphone-7ad248630c5b9829e2ed00f3a56da1d2.png"
+    }
+]
