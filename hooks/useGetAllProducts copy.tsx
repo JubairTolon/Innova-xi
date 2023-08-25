@@ -1,14 +1,8 @@
-import data from '@/public/demoData.json'
-export default async function getServerSideProps() {
-    const query = await fetch(`${data}`);
+export default async function getAllProduct() {
+    const res = await fetch('demoData.json');
 
-    if (!query.ok) {
+    if (!res.ok) {
         throw new Error('failed to fetch user')
     }
-    const res = await query.json();
-    return {
-        props: {
-            productInfo: res
-        }
-    }
+    return res.json()
 }

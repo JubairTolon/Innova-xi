@@ -2,13 +2,13 @@ import React from 'react'
 import styles from '@/styles/hotDeals.module.css'
 // import { useGlobalContext } from '@/context/useContext'
 import Image from 'next/image';
-import getServerSideProps from '@/hooks/useGetAllProducts copy';
+import getAllProduct from '@/hooks/useGetAllProducts copy';
 
 
 
 async function HotDeals() {
     // const { allProduct, getHotProductData } = useGlobalContext();
-    const allProduct = await getServerSideProps();
+    const allProduct = await getAllProduct();
     console.log(allProduct)
 
     return (
