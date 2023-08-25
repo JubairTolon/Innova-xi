@@ -1,5 +1,6 @@
+
 export default async function getAllProduct() {
-    const res = await fetch('demoData.json');
+    const res = await fetch('.......');
 
     if (!res.ok) {
         throw new Error('failed to fetch user')

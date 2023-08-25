@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/hotDeals.module.css'
 // import { useGlobalContext } from '@/context/useContext'
 import Image from 'next/image';
@@ -6,10 +7,29 @@ import getAllProduct from '@/hooks/useGetAllProducts copy';
 
 
 
-async function HotDeals() {
+function HotDeals() {
+    const [products, setProducts] = useState([])
+    const [isLoading, setLoading] = useState<boolean>(true)
+
+    //for call context api
     // const { allProduct, getHotProductData } = useGlobalContext();
-    const allProduct = await getAllProduct();
-    console.log(allProduct)
+
+    useEffect(() => {
+        fetch('demoData.json')
+            .then((res) => res.json())
+            .then((data) => {
+                setProducts(data);
+                setLoading(false);
+            })
+    }, [])
+
+    if (isLoading) return <p>Loading...</p>
+    if (!products) return <p>No profile data</p>
+    console.log(products)
+
+    //for call customm hooks
+    // const allProduct = await getAllProduct();
+    // console.log(allProduct)
 
     return (
         <div className={styles.hotDeal__contianer}>
@@ -19,7 +39,7 @@ async function HotDeals() {
                     <div className={styles.dashed__underline}></div>
                 </div>
 
-                {/* {allProduct.products[0].productData?.map((product: any) => {
+                {products?.map((product: any) => {
                     return (
                         <div
                             className={styles.single__product__container}
@@ -34,7 +54,7 @@ async function HotDeals() {
                             </div>
                         </div>
                     )
-                })} */}
+                })}
 
             </div>
             <div className={styles.text__container}>
