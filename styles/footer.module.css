@@ -28,14 +28,15 @@
 .buy__container__left__contents {
     display: flex;
     width: 60%;
-    column-gap: 30px;
+    /* column-gap: 30px; */
+    justify-content: space-between;
 }
 
 .left__check {
     display: flex;
     align-items: center;
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
     column-gap: 5px;
     margin-top: 5px;
     justify-content: space-between;
@@ -187,13 +188,11 @@
         width: 100%;
         justify-content: space-between;
         font-size: 12px;
-
     }
 
     .left__check {
         font-size: 8px;
         margin-top: 2px;
-
     }
 
     .buy__container__right__contents {

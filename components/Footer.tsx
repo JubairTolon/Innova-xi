@@ -11,15 +11,15 @@ export default function Footer() {
         <footer className={styles.footer__container}>
             <div className={styles.buy__today__container}>
                 <div className={styles.buy__container__left__contents}>
-                    <div>
+                    <div className={styles.buy__container__left__single__content}>
                         <span>Accessories</span>
                         <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
-                    <div>
+                    <div className={styles.buy__container__left__single__content}>
                         <span>Gadget</span>
                         <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
-                    <div>
+                    <div className={styles.buy__container__left__single__content}>
                         <span>Laptops</span>
                         <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
