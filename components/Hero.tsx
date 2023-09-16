@@ -8,6 +8,7 @@ import image3 from '@/public/assets/3.png'
 import image4 from '@/public/assets/4.png'
 import image5 from '@/public/assets/5.png'
 
+
 const Hero = () => {
     const [counter, setCounter] = useState<number>(0);
     const temp = [image1, image2, image3, image4, image5];
@@ -32,7 +33,8 @@ const Hero = () => {
                         alt='headphone'
                         priority
                         quality={100}
-                    // blurDataURL="blur"
+                    // placeholder='blur'
+                    // blurDataURL={temp[counter]}
                     />
                     <div className={styles.pentagon}></div>
                 </div>}

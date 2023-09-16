@@ -3,7 +3,7 @@ import styles from '@/styles/search.module.css'
 import { IoLocationOutline } from 'react-icons/io5';
 import { BsSearch } from 'react-icons/bs';
 
-function SearchSection() {
+export const SearchSection = () => {
     return (
         <div className={styles.search__container}>
             <div className={styles.location__container}>
@@ -23,5 +23,3 @@ function SearchSection() {
 
     )
 }
-
-export default SearchSection

@@ -1,14 +1,9 @@
-import Categories from '@/components/Categories'
-import SearchSection from '@/components/SearchSection'
 import React from 'react'
 
-function Fresh() {
+export default function Fresh() {
     return (
-        <div>
-            <SearchSection />
-            <Categories />
-            Fresh</div>
+        <>
+            Fresh
+        </>
     )
 }
-
-export default Fresh

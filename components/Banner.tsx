@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Banner() {
+export default function Banner() {
     return (
-        <div>Banner</div>
-    )
-}
-
-export default Banner
+        <div>
+            Banner
+        </div>
+    );
+};

@@ -38,7 +38,7 @@
     font-size: 12px;
     column-gap: 5px;
     margin-top: 5px;
-    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .buy__container__right__contents {
@@ -175,7 +175,7 @@
     }
 
     .buy__today__container {
-        height: 120px;
+        height: 100px;
         flex-direction: column;
         row-gap: 20px;
         justify-content: space-between;
@@ -186,25 +186,27 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        font-size: 15px;
+        font-size: 12px;
 
     }
 
     .left__check {
-        font-size: 10px;
-        column-gap: 5px;
-        margin-top: 0;
+        font-size: 8px;
+        margin-top: 2px;
+
     }
 
     .buy__container__right__contents {
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         column-gap: 40px;
+
 
     }
 
     .buy__container__right__contents button {
         font-size: 10px;
+        padding: 4px 14px;
     }
 
 

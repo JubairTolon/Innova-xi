@@ -1,8 +1,9 @@
+'use client'
 import React from 'react'
 import styles from '@/styles/footer.module.css'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
-import { MdSwipeRight } from 'react-icons/md'
+import { LiaHandPointRightSolid } from 'react-icons/lia'
 
 export default function Footer() {
 
@@ -11,16 +12,16 @@ export default function Footer() {
             <div className={styles.buy__today__container}>
                 <div className={styles.buy__container__left__contents}>
                     <div>
-                        <span>Hello</span>
-                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                        <span>Accessories</span>
+                        <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
                     <div>
-                        <span>Hello</span>
-                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                        <span>Gadget</span>
+                        <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
                     <div>
-                        <span>Hello</span>
-                        <span className={styles.left__check}><MdSwipeRight />buy from here</span>
+                        <span>Laptops</span>
+                        <span className={styles.left__check}><LiaHandPointRightSolid />buy from here</span>
                     </div>
                 </div>
                 <div className={styles.buy__container__right__contents}>

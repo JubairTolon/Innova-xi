@@ -16,8 +16,6 @@
         grid-row-gap: 6px; */
 }
 
-.hotDeal__heading {}
-
 .dashed__underline {
     background: linear-gradient(white, white) padding-box,
         linear-gradient(to right, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff) border-box;
@@ -44,14 +42,7 @@
     cursor: pointer;
     transition: all .3s;
     overflow: hidden;
-}
-
-.single__product__container:hover {
-    background: rgba(121, 121, 121, 0.155);
-
-    .product__image {
-        transform: scale(1.1);
-    }
+    position: relative;
 }
 
 .product__image {
@@ -61,19 +52,33 @@
     transition: .3s;
 }
 
-.product__details {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: lighter;
+.single__product__container:hover {
+    /* background-color: #141414; */
+    background-image: linear-gradient(to top, #141414, #101010, #0b0b0b, #060606, #000000);
+
+    .product__image {
+        transform: scale(1.1);
+    }
 }
 
-.product__pri__dis {
-    color: #0072ff;
-    font-weight: bold;
+.product__name {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.product__details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 15px;
 }
 
 .discount {
-    color: orangered;
+    color: #1f84ff;
+    margin-left: 80px;
+    font-weight: 500;
 }
 
 .text__container {
@@ -89,3 +94,59 @@
     background-clip: text;
     color: transparent;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hotDeal__contianer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product__container {
+        width: 100%;
+    }
+
+    .dashed__underline {
+        width: 100%;
+    }
+
+    .hotDeal__heading h1 {
+        font-size: 18px;
+    }
+
+    .products__wrapper {
+        margin-top: 40px;
+    }
+
+    .product__image {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+
+    .product__name {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .text__container {
+        font-size: 35px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .text__container span {
+        font-weight: 500;
+        background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:601px) and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 993px) {}

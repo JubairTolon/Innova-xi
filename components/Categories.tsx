@@ -1,88 +1,87 @@
 'use client'
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { navLinks } from './Model'
 import styles from '@/styles/category.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-function Categories() {
+export default function Categories() {
     const pathname = usePathname();
-    const [categoryActive, setCategoryActive] = useState<boolean>(false)
+    // const [categoryActive, setCategoryActive] = useState<boolean>(false);
     const categoriesLinks: navLinks[] = [
         {
-            name: 'Fresh',
-            link: '/fresh'
+            title: 'Fresh',
+            path: '/fresh'
         },
         {
-            name: 'Today’s Deals',
-            link: '/todaysDeals'
+            title: 'Today’s Deals',
+            path: '/todaysDeals'
         },
         {
-            name: 'Mobiles',
-            link: '/mobiles'
+            title: 'Mobiles',
+            path: '/mobiles'
         },
         {
-            name: 'Gift Cards',
-            link: '/giftCards'
+            title: 'Gift Cards',
+            path: '/giftCards'
         },
         {
-            name: 'Women Clothing',
-            link: '/womenClothing'
+            title: 'Women Clothing',
+            path: '/womenClothing'
         },
         {
-            name: 'Men Clothing',
-            link: '/menClothing'
+            title: 'Men Clothing',
+            path: '/menClothing'
         },
         {
-            name: 'Kids Clothing',
-            link: '/kidsClothing'
+            title: 'Kids Clothing',
+            path: '/kidsClothing'
         },
         {
-            name: 'Health',
-            link: '/health'
+            title: 'Health',
+            path: '/health'
         },
         {
-            name: 'Pet corner',
-            link: '/petCorner'
+            title: 'Pet corner',
+            path: '/petCorner'
         },
         {
-            name: 'Cloth Booksing',
-            link: '/clothBooksing'
+            title: 'Cloth Booksing',
+            path: '/clothBooksing'
         },
         {
-            name: 'Beauty',
-            link: '/beauty'
+            title: 'Beauty',
+            path: '/beauty'
         },
         {
-            name: 'Kitchen',
-            link: '/kitchen'
+            title: 'Kitchen',
+            path: '/kitchen'
         },
         {
-            name: 'Bed Room',
-            link: '/bedRoom'
+            title: 'Bed Room',
+            path: '/bedRoom'
         },
         {
-            name: 'Sport',
-            link: '/sport'
+            title: 'Sport',
+            path: '/sport'
         },
         {
-            name: 'Bags',
-            link: '/bags'
+            title: 'Bags',
+            path: '/bags'
         },
     ]
     return (
         <div className={styles.category__container}>
-            {categoriesLinks.map((link) => {
-                const isActive = pathname === link.link;
+            {categoriesLinks.map((item, index) => {
                 return (
                     <Link
-                        onClick={() => setCategoryActive(!categoryActive)}
+                        // onClick={() => setCategoryActive(!categoryActive)}
                         // className={categoryActive ? styles.single__NavLink__Active : styles.single__NavLink__Deactive}
-                        className={isActive ? styles.single__NavLink__Active : styles.single__NavLink__Deactive}
-                        href={link.link}
-                        key={link.name}
+                        key={index}
+                        className={pathname === item.path ? styles.single__NavLink__Active : styles.single__NavLink__Deactive}
+                        href={item.path}
                     >
-                        {link.name}
+                        {item.title}
                     </Link>
                 )
             })}
@@ -91,5 +90,3 @@ function Categories() {
         </div>
     )
 }
-
-export default Categories

@@ -17,15 +17,15 @@ const GlobalContext = createContext({} as GlobalContext);
 
 export const GlobalContextProvider = ({ children }: ProductProviderProps) => {
 
-    const getAllProductData = async () => {
+    async function getAllProductData() {
         const res = await fetch('https://api.hiring.masterkey.tech/api/v1/products')
         return res.json();
     };
 
 
-    const getHotProductData = async () => {
+    async function getHotProductData() {
         const res = await fetch('https://api.hiring.masterkey.tech/api/v1/products?product_type=Today’s hot deals')
-        return res.json();
+        return await res.json();
     };
 
     return (

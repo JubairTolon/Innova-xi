@@ -108,7 +108,7 @@
     font-weight: 300;
 }
 
-.single__NavLink__Active {
+.single__navLink__active {
     background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
     /* background: linear-gradient(90deg, rgba(0, 255, 158, 1) 0%, rgba(196, 0, 255, 1) 100%); */
     background-clip: text;
@@ -117,7 +117,7 @@
     transition: all .2s ease-in-out;
 }
 
-.single__NavLink__Deactive:hover {
+.single__navLink__deactive:hover {
     background-image: linear-gradient(to left, #fa00ff, #cd46ff, #9d5dff, #666bff, #0072ff);
     /* background: linear-gradient(90deg, rgba(0, 255, 158, 1) 0%, rgba(196, 0, 255, 1) 100%); */
     background-clip: text;

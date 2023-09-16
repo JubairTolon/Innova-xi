@@ -1,14 +1,13 @@
-'use client'
-
 import React from 'react'
 
-function Shop() {
+export default function Shop() {
     return (
-        <div>Shop</div>
+        <>
+            Shop
+        </>
     )
 }
 
-export default Shop
 
 // const getPostData = async () => {
 //     const res = await fetch('https://jsonplaceholder.typicode.com/posts')

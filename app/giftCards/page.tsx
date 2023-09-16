@@ -1,14 +1,9 @@
-import Categories from '@/components/Categories'
-import SearchSection from '@/components/SearchSection'
 import React from 'react'
 
-function GiftCards() {
+export default function GiftCards() {
     return (
-        <div>
-            <SearchSection />
-            <Categories />
-            GiftCards</div>
+        <>
+            GiftCards
+        </>
     )
 }
-
-export default GiftCards
