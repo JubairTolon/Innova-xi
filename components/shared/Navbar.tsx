@@ -6,7 +6,7 @@ import { HiMenu } from 'react-icons/hi';
 import { RxCross2 } from 'react-icons/rx';
 import { BsCartCheck } from 'react-icons/bs';
 import { AiFillHeart } from 'react-icons/ai';
-import { navLinks } from './Model';
+import { navLinks } from '../../types/Model';
 import { usePathname } from 'next/navigation';
 
 

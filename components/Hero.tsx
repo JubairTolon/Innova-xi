@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/hero.module.css'
 import Image from 'next/image'
 import image1 from '@/public/assets/1.png'
@@ -12,10 +12,12 @@ import image5 from '@/public/assets/5.png'
 const Hero = () => {
     const [counter, setCounter] = useState<number>(0);
     const temp = [image1, image2, image3, image4, image5];
+    useEffect(() => {
+        setTimeout(() => {
+            counter === 4 ? setCounter(0) : setCounter(counter + 1);
+        }, 3000);
+    }, [counter])
 
-    setTimeout(() => {
-        counter === 4 ? setCounter(0) : setCounter(counter + 1);
-    }, 3000);
 
 
     return (
@@ -43,4 +45,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Hero;

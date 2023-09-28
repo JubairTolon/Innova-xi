@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { GlobalContextProvider } from '@/context/useContext'
-import { Navbar } from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import { Navbar } from '@/components/shared/Navbar'
+import Footer from '@/components/shared/Footer'
 
 export const metadata: Metadata = {
   title: 'Innova XI',

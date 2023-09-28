@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/hotDeals.module.css";
 // import { useGlobalContext } from '@/context/useContext'
@@ -6,9 +6,10 @@ import Image from "next/image";
 // import getAllUser from "@/hooks/useGetAllUser";
 // import getAllProduct from "@/hooks/useGetAllProducts copy";
 
-export const HotDeals = () => {
+export default function HotDeals() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState<boolean>(true);
+  console.log(products);
 
   //for call context api
   // const { getAllProductData } = useGlobalContext();
@@ -23,9 +24,8 @@ export const HotDeals = () => {
       });
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <p className="text-center">Loading...</p>;
   if (!products) return <p>No profile data</p>;
-  console.log(products);
 
   //for call customm hooks
   // const allProduct = await getAllProduct();

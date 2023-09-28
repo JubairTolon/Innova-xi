@@ -1,6 +1,6 @@
 'use client'
 // import React, { useState } from 'react'
-import { navLinks } from './Model'
+import { navLinks } from '../types/Model'
 import styles from '@/styles/category.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
