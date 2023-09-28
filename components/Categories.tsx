@@ -72,7 +72,7 @@ export default function Categories() {
     ]
     return (
         <div className={styles.category__container}>
-            {categoriesLinks.map((item, index) => {
+            {/* {categoriesLinks.map((item, index) => {
                 return (
                     <Link
                         // onClick={() => setCategoryActive(!categoryActive)}
@@ -84,7 +84,7 @@ export default function Categories() {
                         {item.title}
                     </Link>
                 )
-            })}
+            })} */}
             {/* <Link href='/about/us'>About Us</Link> */}
             {/* <Link href='/about/someone'>About Someone</Link> */}
         </div>

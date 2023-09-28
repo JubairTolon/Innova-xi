@@ -38,7 +38,7 @@ export const Navbar = () => {
     return (
         <nav className={styles.nav__container}>
             {/* dropdown navbar */}
-            <button
+            {/* <button
                 className={styles.menu__btn}
                 onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -56,7 +56,7 @@ export const Navbar = () => {
                     </Link>
 
                 )}
-            </div>
+            </div> */}
 
             {/* main navbar start */}
             <div className={styles.branding__module}>
