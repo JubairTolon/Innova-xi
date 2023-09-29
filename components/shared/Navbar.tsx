@@ -11,7 +11,7 @@ import { usePathname } from 'next/navigation';
 
 
 export const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState<boolean>(false);
+    const [menuOpen, setMenuOpen] = useState<boolean>(true);
     const pathname = usePathname();
     const navLinks: navLinks[] = [
         {
@@ -38,13 +38,13 @@ export const Navbar = () => {
     return (
         <nav className={styles.nav__container}>
             {/* dropdown navbar */}
-            {/* <button
+            <button
                 className={styles.menu__btn}
                 onClick={() => setMenuOpen(!menuOpen)}
             >
-                {menuOpen ? < RxCross2 /> : <HiMenu />}
+                {!menuOpen ? < RxCross2 /> : <HiMenu />}
             </button>
-            <div className={menuOpen ? `${styles.dropdown__menu__container} ${styles.active}` : styles.dropdown__menu__container}>
+            {/* <div className={menuOpen ? `${styles.dropdown__menu__container} ${styles.active}` : styles.dropdown__menu__container}>
                 {navLinks.map((item, index) =>
                     <Link
                         href={item.path}
@@ -63,7 +63,7 @@ export const Navbar = () => {
                 <div><Link href='/' className={styles.brand}>Innova XI</Link></div>
                 <div className={styles.underline}></div>
             </div>
-            <div className={styles.nav__menus__module}>
+            <div className={menuOpen ? `${styles.nav__menus__module}` : styles.dropdown_visible}>
                 {navLinks.map((item, index) =>
                     <Link
                         href={item.path}
@@ -71,6 +71,7 @@ export const Navbar = () => {
                         // passHref
                         // legacyBehavior
                         className={pathname === item.path ? styles.single__navLink__active : styles.single__navLink__deactive}
+                    // onClick={() => { setMenuOpen(!menuOpen) }}
                     >
                         {item.title}
                     </Link>

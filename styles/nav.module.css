@@ -63,45 +63,14 @@
 }
 
 
-.dropdown__menu__container {
-    position: absolute;
-    background-color: #484343;
-    display: flex;
-    flex-direction: column;
-    top: 55px;
-    left: 0;
-    width: 180px;
-    /* row-gap: 15px; */
-    padding: 20px;
-    border-radius: 0 0 8px 8px;
-    background: #0A0A0A;
-    min-height: 230px;
-    transition: min-height 1s;
-    justify-content: space-between;
-}
-
-.dropdown__menu__container {
-    position: absolute;
-    background-color: #484343;
-    display: flex;
-    flex-direction: column;
-    top: 55px;
-    left: 0;
-    width: 180px;
-    row-gap: 15px;
-    padding: 20px;
-    border-radius: 0 0 8px 8px;
-    background: #0A0A0A;
-    transform: scale(0);
-    transition: transform 300ms;
-    transform-origin: top left;
-}
-
-.active {
-    transform: scale(1);
-}
-
 .nav__menus__module {
+    display: flex;
+    column-gap: 35px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.dropdown_visible {
     display: flex;
     column-gap: 35px;
     font-size: 18px;
@@ -163,10 +132,49 @@
 @media only screen and (max-width: 600px) {
     .nav__container {
         height: 55px;
+        position: relative;
     }
 
     .nav__menus__module {
-        display: none;
+        position: absolute;
+        left: 0;
+        top: 55px;
+        display: flex;
+        flex-direction: column;
+        background-color: #141414;
+        width: 25%;
+        height: 220px;
+        justify-content: space-evenly;
+        border-radius: 0 0 8px 0;
+        padding-left: 20px;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transform: scaleY(0);
+        transition: .3s;
+        transform-origin: top;
+
+    }
+
+    .dropdown_visible {
+        position: absolute;
+        left: 0;
+        top: 55px;
+        display: flex;
+        flex-direction: column;
+        background-color: #141414;
+        width: 25%;
+        height: 220px;
+        justify-content: space-evenly;
+        border-radius: 0 0 8px 0;
+        padding-left: 20px;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transform: scaleY(1);
+        transition: .3s;
+        transform-origin: top;
+
     }
 
     .brand {
